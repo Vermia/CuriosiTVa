@@ -84,15 +84,11 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_filtros) {
             // Handle the camera action
         } else if (id == R.id.nav_idiomas) {
-            Intent idiomas= new Intent(getApplicationContext(),Main2Activity.class);
+            Intent idiomas= new Intent(getApplicationContext(),Idiomas.class);
             startActivity(idiomas);
         } else if (id == R.id.nav_notif) {
 
         } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
 
         }
 
