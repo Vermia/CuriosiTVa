@@ -17,6 +17,11 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    public void despliegaSeries(){
+
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,14 +87,17 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_filtros) {
-            // Handle the camera action
+            Intent filtros=new Intent(getApplicationContext(),Filtros.class);
+            startActivity(filtros);
         } else if (id == R.id.nav_idiomas) {
             Intent idiomas= new Intent(getApplicationContext(),Idiomas.class);
             startActivity(idiomas);
-        } else if (id == R.id.nav_notif) {
-
-        } else if (id == R.id.nav_manage) {
-
+        } else if (id == R.id.nav_temas) {
+            Intent temas = new Intent(getApplicationContext(),Temas.class);
+            startActivity(temas);
+        } else if (id == R.id.nav_about) {
+            Intent about= new Intent(getApplicationContext(),About.class);
+            startActivity(about);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

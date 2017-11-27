@@ -21,7 +21,7 @@ public class Idiomas extends AppCompatActivity {
         boton_ingles =(RadioButton) findViewById(R.id.idioma_ingles_boton);
         boton_italiano =(RadioButton) findViewById(R.id.idioma_italiano_boton);
 
-
+        boton_espanol.setChecked(true);
 
 
     }
