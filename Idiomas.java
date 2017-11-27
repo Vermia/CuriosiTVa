@@ -7,7 +7,7 @@ import android.widget.RadioButton;
 
 public class Idiomas extends AppCompatActivity {
     private RadioButton boton_espanol, boton_aleman, boton_frances, boton_ingles, boton_italiano;
-
+    private static String idioma;
 
 
     @Override
@@ -27,23 +27,78 @@ public class Idiomas extends AppCompatActivity {
     }
 
     public void pulsaAleman(View v) {
+        boton_aleman.setChecked(true);
 
+        if(boton_espanol.isChecked())
+            boton_espanol.setChecked(false);
+        if(boton_frances.isChecked())
+            boton_frances.setChecked(false);
+        if(boton_ingles.isChecked())
+            boton_ingles.setChecked(false);
+        if(boton_italiano.isChecked())
+            boton_italiano.setChecked(false);
+
+        idioma=new String("Aleman");
     }
 
     public void pulsaEspanol(View v){
+        boton_espanol.setChecked(true);
 
+        if(boton_aleman.isChecked())
+            boton_aleman.setChecked(false);
+        if(boton_frances.isChecked())
+            boton_frances.setChecked(false);
+        if(boton_ingles.isChecked())
+            boton_ingles.setChecked(false);
+        if(boton_italiano.isChecked())
+            boton_italiano.setChecked(false);
+
+        idioma=new String("Espanol");
     }
 
     public void pulsaFrances(View v) {
+        boton_frances.setChecked(true);
 
+        if(boton_espanol.isChecked())
+            boton_espanol.setChecked(false);
+        if(boton_aleman.isChecked())
+            boton_aleman.setChecked(false);
+        if(boton_ingles.isChecked())
+            boton_ingles.setChecked(false);
+        if(boton_italiano.isChecked())
+            boton_italiano.setChecked(false);
+
+        idioma=new String("Frances");
     }
 
     public void pulsaIngles(View v){
+        boton_ingles.setChecked(true);
 
+        if(boton_espanol.isChecked())
+            boton_espanol.setChecked(false);
+        if(boton_frances.isChecked())
+            boton_frances.setChecked(false);
+        if(boton_aleman.isChecked())
+            boton_aleman.setChecked(false);
+        if(boton_italiano.isChecked())
+            boton_italiano.setChecked(false);
+
+        idioma=new String("Ingles");
     }
 
     public void pulsaItaliano(View v){
+        boton_italiano.setChecked(true);
 
+        if(boton_espanol.isChecked())
+            boton_espanol.setChecked(false);
+        if(boton_frances.isChecked())
+            boton_frances.setChecked(false);
+        if(boton_aleman.isChecked())
+            boton_aleman.setChecked(false);
+        if(boton_ingles.isChecked())
+            boton_ingles.setChecked(false);
+
+        idioma=new String("Italiano");
     }
 
 }
