@@ -17,9 +17,9 @@ public class Idiomas extends AppCompatActivity {
 
         boton_aleman= (RadioButton) findViewById(R.id.idioma_aleman_boton);
         boton_espanol= (RadioButton) findViewById(R.id.idioma_espanol_boton);
-        boton_frances =(RadioButton) findViewById(R.id.idioma_espanol_boton);
-        boton_ingles =(RadioButton) findViewById(R.id.idioma_espanol_boton);
-        boton_italiano =(RadioButton) findViewById(R.id.idioma_espanol_boton);
+        boton_frances =(RadioButton) findViewById(R.id.idioma_frances_boton);
+        boton_ingles =(RadioButton) findViewById(R.id.idioma_ingles_boton);
+        boton_italiano =(RadioButton) findViewById(R.id.idioma_italiano_boton);
 
 
 
