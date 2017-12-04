@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-    <RelativeLayout
+<RelativeLayout
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     tools:context="com.example.vermia.cosas.Idiomas"

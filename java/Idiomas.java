@@ -1,9 +1,9 @@
-package com.example.vermia.cosas;
+package com.example.pacop.myapplication;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.RadioButton;
+        import android.support.v7.app.AppCompatActivity;
+        import android.os.Bundle;
+        import android.view.View;
+        import android.widget.RadioButton;
 
 public class Idiomas extends AppCompatActivity {
     private RadioButton boton_espanol, boton_aleman, boton_frances, boton_ingles, boton_italiano;
@@ -23,7 +23,7 @@ public class Idiomas extends AppCompatActivity {
 
         boton_espanol.setChecked(true);
 
-
+        setTitle("idiomas");
     }
 
     public void pulsaAleman(View v) {
@@ -102,4 +102,3 @@ public class Idiomas extends AppCompatActivity {
     }
 
 }
-

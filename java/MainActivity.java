@@ -1,4 +1,4 @@
-package com.example.vermia.cosas;
+package com.example.pacop.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,11 +16,6 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
-    public void despliegaSeries(){
-
-    }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,17 +82,17 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_filtros) {
-            Intent filtros=new Intent(getApplicationContext(),Filtros.class);
+            // Handle the camera action
+            Intent filtros= new Intent(getApplicationContext(),filtros.class);
             startActivity(filtros);
         } else if (id == R.id.nav_idiomas) {
             Intent idiomas= new Intent(getApplicationContext(),Idiomas.class);
             startActivity(idiomas);
+        } else if (id == R.id.nav_notif) {
+
         } else if (id == R.id.nav_temas) {
-            Intent temas = new Intent(getApplicationContext(),Temas.class);
+            Intent temas= new Intent(getApplicationContext(),Temas.class);
             startActivity(temas);
-        } else if (id == R.id.nav_about) {
-            Intent about= new Intent(getApplicationContext(),About.class);
-            startActivity(about);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
