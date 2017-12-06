@@ -128,4 +128,9 @@ public class MainActivity extends AppCompatActivity
             listaPeliculas.setVisibility(View.VISIBLE);
         else listaPeliculas.setVisibility(GONE);
     }
+
+    public void abrirSerie1(){
+        startActivity(new Intent(getApplicationContext(), SerieEjemplo.class));
+    }
+
 }
