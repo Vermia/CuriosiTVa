@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity
         else listaPeliculas.setVisibility(GONE);
     }
 
-    public void abrirSerie1(){
+    public void abrirSerie1(View v){
         startActivity(new Intent(getApplicationContext(), SerieEjemplo.class));
     }
 
