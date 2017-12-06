@@ -22,7 +22,6 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_below="@id/serieEjemploTexto"
         android:id="@+id/horizontalScrollView"
-        android:background="#000"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,7 +40,6 @@
                 android:text="Temporada 1"
                 android:onClick="pulsaTemp1"
                 android:layout_marginTop="7dp"
-                android:background="#0cc"
                 />
 
             <TextView
@@ -51,6 +49,8 @@
                 android:text="Temporada 2"
                 android:layout_marginLeft="40dp"
                 android:onClick="pulsaTemp2"
+
+                android:layout_marginTop="7dp"
                 />
             <TextView
                 android:id="@+id/Temporada3"
@@ -59,6 +59,7 @@
                 android:text="Temporada 3"
                 android:layout_marginLeft="40dp"
                 android:onClick="pulsaTemp3"
+                android:layout_marginTop="7dp"
                 />
             <TextView
                 android:id="@+id/Temporada4"
@@ -67,6 +68,7 @@
                 android:text="Temporada 4"
                 android:layout_marginLeft="40dp"
                 android:onClick="pulsaTemp4"
+                android:layout_marginTop="7dp"
                 />
             <TextView
                 android:id="@+id/Temporada5"
@@ -75,6 +77,7 @@
                 android:text="Temporada 5"
                 android:layout_marginLeft="40dp"
                 android:onClick="pulsaTemp5"
+                android:layout_marginTop="7dp"
                 />
         </LinearLayout>
 
