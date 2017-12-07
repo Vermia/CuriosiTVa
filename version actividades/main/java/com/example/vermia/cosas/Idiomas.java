@@ -20,10 +20,16 @@ public class Idiomas extends AppCompatActivity {
         boton_frances =(RadioButton) findViewById(R.id.idioma_frances_boton);
         boton_ingles =(RadioButton) findViewById(R.id.idioma_ingles_boton);
         boton_italiano =(RadioButton) findViewById(R.id.idioma_italiano_boton);
-
-        boton_espanol.setChecked(true);
-
-
+        if(idioma.equalsIgnoreCase("Espanol"))
+            boton_espanol.setChecked(true);
+        if(idioma.equalsIgnoreCase("Aleman"))
+            boton_aleman.setChecked(true);
+        if(idioma.equalsIgnoreCase("Ingles"))
+            boton_ingles.setChecked(true);
+        if(idioma.equalsIgnoreCase("Frances"))
+            boton_frances.setChecked(true);
+        if(idioma.equalsIgnoreCase("Italiano"))
+            boton_italiano.setChecked(true);
     }
 
     public void pulsaAleman(View v) {
@@ -99,6 +105,14 @@ public class Idiomas extends AppCompatActivity {
             boton_ingles.setChecked(false);
 
         idioma=new String("Italiano");
+    }
+
+    public static void setIdioma(String idioma_parametro){
+        idioma=idioma_parametro;
+    }
+
+    public static String getIdioma(){
+        return idioma;
     }
 
 }

@@ -12,6 +12,7 @@ public class intro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        Idiomas.setIdioma("Espanol");
         setContentView(R.layout.intro);
 
         Runnable r = new Runnable() {
