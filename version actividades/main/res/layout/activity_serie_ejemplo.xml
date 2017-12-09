@@ -98,6 +98,7 @@
             android:layout_height="wrap_content"
             android:text="1x01: La alparca"
             android:layout_marginLeft="40dp"
+            android:onClick="abrirCap1x01"
             />
         <TextView
             android:id="@+id/cap1x02"

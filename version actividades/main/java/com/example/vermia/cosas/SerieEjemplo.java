@@ -1,5 +1,6 @@
 package com.example.vermia.cosas;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -114,5 +115,9 @@ public class SerieEjemplo extends AppCompatActivity {
         if(temp3.getVisibility()==View.VISIBLE)
             temp3.setVisibility(GONE);
 
+    }
+
+    public void abrirCap1x01(View v){
+        startActivity(new Intent(getApplicationContext(), Video1x01.class));
     }
 }

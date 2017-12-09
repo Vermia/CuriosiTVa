@@ -12,6 +12,7 @@
         <activity
             android:name=".intro"
             android:label="@string/app_name"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,21 +21,23 @@
             </intent-filter>
         </activity>
         <activity android:name=".Main2Activity" />
-        <activity android:name=".Idiomas" />
+        <activity android:name=".Idiomas"
+            android:screenOrientation="portrait"/>
         <activity android:name=".Filtros"
-            >
-        </activity>
-        <activity android:name=".About" />
-        <activity android:name=".Temas" />
-        <activity android:name=".SerieEjemplo"/>
-        <activity android:name=".MainActivity"
-
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".About"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Temas"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SerieEjemplo"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"
-            >
-
-        </activity>
-
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Video1x01"
+            android:screenOrientation="landscape"></activity>
     </application>
 
 </manifest>
