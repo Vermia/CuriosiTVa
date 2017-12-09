@@ -1,6 +1,7 @@
 package com.example.vermia.cosas;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,15 +14,24 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import static android.view.View.GONE;
 
+
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
     private TextView ss;
+    private ImageButton BusquedaImgInicio;
+    private EditText BusquedaInicio;
+
+    private static String Busq;
+    private static String[] Series;
+    private static String[] Peliculas;
 
 
 
@@ -31,10 +41,12 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
         ss=(TextView) findViewById(R.id.Serie1);
 
+        BusquedaImgInicio = (ImageButton) findViewById(R.id.BusquedaImgInicio);
 
-
+        BusquedaInicio = (EditText) findViewById(R.id.BusquedaInicio);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +65,21 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+        BusquedaImgInicio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Busq = BusquedaInicio.getText().toString();
+                Intent BusquedaInicio= new Intent(getApplicationContext(),BusquedaSP.class);
+                startActivity(BusquedaInicio);
+
+            }
+        });
+
+
+
     }
 
     @Override
@@ -132,6 +159,18 @@ public class MainActivity extends AppCompatActivity
 
     public void abrirSerie1(View v){
         startActivity(new Intent(getApplicationContext(), SerieEjemplo.class));
+    }
+
+    public static String getBusq() {
+        if(Busq==null) Busq = "";
+        return Busq;
+    }
+
+    public static String[] getSeries() {
+        return Series;
+    }
+    public static String[] getPeliculas() {
+        return Peliculas;
     }
 
 }

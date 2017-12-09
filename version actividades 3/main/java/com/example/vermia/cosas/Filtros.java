@@ -21,11 +21,11 @@ public class Filtros extends AppCompatActivity {
     private static boolean terminos;
     private static boolean personajes;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_filtros);
-
 
         botonActores= (CheckBox) findViewById(R.id.BotonActores);
         botonRopa= (CheckBox) findViewById(R.id.BotonRopa);
