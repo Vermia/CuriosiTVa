@@ -1,10 +1,7 @@
 package com.example.vermia.cosas;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -12,9 +9,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
@@ -60,6 +55,7 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        setTitle("CuriosiTV");
 
         BusquedaImgInicio.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -131,7 +127,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void abrirSerie1(View v){
-        startActivity(new Intent(getApplicationContext(), SerieEjemplo.class));
+        startActivity(new Intent(getApplicationContext(), TheBigBangTheory.class));
     }
 
     public static String getBusq() {

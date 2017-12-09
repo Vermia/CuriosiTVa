@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
-public class intro extends AppCompatActivity {
+public class Introduccion extends AppCompatActivity {
 
 
     @Override

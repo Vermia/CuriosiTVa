@@ -8,7 +8,7 @@ import android.widget.LinearLayout;
 
 import static android.view.View.GONE;
 
-public class SerieEjemplo extends AppCompatActivity {
+public class TheBigBangTheory extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

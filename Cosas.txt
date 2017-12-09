@@ -8,3 +8,5 @@
         });
 
 =======
+Array de RelativeLayouts para usar un for para chequear los favoritos
+=======

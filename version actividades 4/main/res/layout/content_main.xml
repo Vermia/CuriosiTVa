@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:text="The Big Bang Theory"
                 android:textSize="20dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginLeft="50dp"
 
                 android:onClick="abrirSerie1"
@@ -110,9 +110,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pelicula1"
+                android:text="Tranformers"
                 android:textSize="20dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginLeft="50dp"
 
                 android:id="@+id/Pelicula1"
@@ -156,7 +156,7 @@
             android:layout_width="wrap_content"
             android:layout_height="15dp"
             android:layout_below="@id/listaPeliculas"
-            android:text=" "/>
+            android:text=""/>
 
     </RelativeLayout>
 
