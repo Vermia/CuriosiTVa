@@ -20,12 +20,13 @@
             android:layout_weight="70"
             android:fontFamily="sans-serif"
             android:gravity="left"
-            android:text="Etiqueta" />
+            android:text="Actores" />
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="true"
+            android:id="@+id/BotonActores"
+            android:onClick="pulsaActores"
             />
     </LinearLayout>
     <LinearLayout
@@ -41,8 +42,10 @@
             android:layout_weight="70"
             android:gravity="left"
             android:fontFamily="sans-serif"
-            android:text="Etiqueta"/>
+            android:text="Ropa"/>
         <CheckBox
+            android:id="@+id/BotonRopa"
+            android:onClick="pulsaRopa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />
@@ -60,8 +63,10 @@
             android:layout_marginLeft="30dp"
             android:gravity="left"
             android:fontFamily="sans-serif"
-            android:text="Etiqueta"/>
+            android:text="Lugares"/>
         <CheckBox
+            android:id="@+id/BotonLugares"
+            android:onClick="pulsaLugares"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />
@@ -79,8 +84,10 @@
             android:gravity="left"
             android:layout_marginLeft="30dp"
             android:fontFamily="sans-serif"
-            android:text="Etiqueta"/>
+            android:text="Artículos"/>
         <CheckBox
+            android:id="@+id/BotonArticulos"
+            android:onClick="pulsaArticulos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />
@@ -98,8 +105,11 @@
             android:layout_marginLeft="30dp"
             android:gravity="left"
             android:fontFamily="sans-serif"
-            android:text="Etiqueta"/>
+            android:text="Términos"/>
         <CheckBox
+
+            android:id="@+id/BotonTerminos"
+            android:onClick="pulsaTerminos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />
@@ -117,8 +127,10 @@
             android:layout_marginLeft="30dp"
             android:gravity="left"
             android:fontFamily="sans-serif"
-            android:text="Etiqueta"/>
+            android:text="Personajes"/>
         <CheckBox
+            android:id="@+id/BotonPersonajes"
+            android:onClick="pulsaPersonajes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />

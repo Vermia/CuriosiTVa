@@ -130,6 +130,16 @@
                 android:id="@+id/Pelicula3"
                 />
         </LinearLayout>
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginEnd="29dp"
+            android:layout_marginRight="29dp"
+            android:layout_marginTop="20dp" />
     </RelativeLayout>
 
 
