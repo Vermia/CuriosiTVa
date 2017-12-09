@@ -32,7 +32,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="54dp"
             android:text=""
+            android:hint="Buscar..."
             android:textSize="28dp"
+
             />
         <LinearLayout
             android:layout_width="match_parent"
@@ -87,6 +89,7 @@
             android:layout_alignLeft="@+id/listaSeries"
             android:layout_alignStart="@+id/listaSeries"
             android:layout_below="@+id/listaSeries"
+            android:layout_marginTop="20dp"
             android:text="Películas"
             android:textSize="40dp"
             android:onClick="despliegaPeliculas"
@@ -149,8 +152,14 @@
             android:layout_marginTop="55dp"
             app:srcCompat="@android:drawable/ic_search_category_default" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_below="@id/listaPeliculas"
+            android:text=" "/>
 
     </RelativeLayout>
+
 
 
 </ScrollView>
