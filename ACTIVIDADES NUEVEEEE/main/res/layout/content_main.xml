@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.vermia.cosas.MainActivity"
+        tools:showIn="@layout/app_bar_main">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Series"
+            android:textSize="40dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="50dp"
+
+            android:onClick="despliegaSeries"
+
+            android:id="@+id/Series"
+            />
+        <EditText
+            android:id="@+id/BusquedaInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="54dp"
+            android:text=""
+            android:hint="Buscar..."
+            android:textSize="28dp"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/listaSeries"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Series"
+            android:layout_alignStart="@+id/Series"
+            android:layout_below="@+id/Series"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Big Bang Theory"
+                android:textSize="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="50dp"
+
+                android:onClick="abrirSerie1"
+                android:id="@+id/Serie1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Juego de Tronos"
+                android:textSize="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="50dp"
+
+                android:id="@+id/Serie2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rick y Morty"
+                android:textSize="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="50dp"
+
+                android:id="@+id/Serie3"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Peliculas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/listaSeries"
+            android:layout_alignStart="@+id/listaSeries"
+            android:layout_below="@+id/listaSeries"
+            android:layout_marginTop="20dp"
+            android:text="Películas"
+            android:textSize="40dp"
+            android:onClick="despliegaPeliculas"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/listaPeliculas"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Peliculas"
+            android:layout_alignStart="@+id/Peliculas"
+            android:layout_below="@+id/Peliculas"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tranformers"
+                android:textSize="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="50dp"
+
+                android:id="@+id/Pelicula1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pelicula2"
+                android:textSize="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="50dp"
+
+                android:id="@+id/Pelicula2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pelicula3"
+                android:textSize="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="50dp"
+
+                android:id="@+id/Pelicula3"
+                />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/BusquedaImgInicio"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="55dp"
+            app:srcCompat="@android:drawable/ic_search_category_default" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_below="@id/listaPeliculas"
+            android:text=""/>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
