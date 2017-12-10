@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="15dp"
+        android:text="@string/t1"
+        android:textColorLink="@color/colorPrimaryDark"/>
+
+    <ImageView
+        android:id="@+id/imgA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/intro"
+        android:layout_marginTop="15dp"
+
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_alignTop="@id/imgA"
+        android:layout_toRightOf="@id/imgA"
+        android:text="@string/t3"
+        android:textColorLink="@color/colorPrimaryDark"/>
+
+
+
+
+    <ImageView
+        android:id="@+id/imgC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imgA"
+        android:layout_marginTop="10dp"
+
+        app:srcCompat="@mipmap/ic_launcher" />
+
+
+    <TextView
+        android:id="@+id/textC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@id/imgC"
+        android:layout_toRightOf="@id/imgC"
+        android:layout_marginTop="15dp"
+        android:text="@string/t4"
+        android:textColorLink="@color/colorPrimaryDark"/>
+
+
+
+
+    <ImageView
+        android:id="@+id/imgM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imgC"
+        android:layout_marginTop="10dp"
+
+        app:srcCompat="@mipmap/ic_launcher" />
+
+
+    <TextView
+        android:id="@+id/textM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@id/imgM"
+        android:layout_toRightOf="@id/imgM"
+        android:layout_marginTop="15dp"
+        android:text="@string/t5"
+        android:textColorLink="@color/colorPrimaryDark"/>
+
+
+
+
+    <ImageView
+        android:id="@+id/imgP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imgM"
+        android:layout_marginTop="10dp"
+
+        app:srcCompat="@mipmap/ic_launcher" />
+
+
+    <TextView
+        android:id="@+id/textP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@id/imgP"
+        android:layout_toRightOf="@id/imgP"
+        android:layout_marginTop="15dp"
+        android:text="@string/t6"
+        android:textColorLink="@color/colorPrimaryDark"/>
+
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/t2"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:linksClickable="true"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
