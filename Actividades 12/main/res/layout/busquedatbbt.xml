@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+
+
+
+
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="20dp"
+        android:text=""
+        android:textColor="@color/disponible"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:id="@+id/barra1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/disponible"
+        />
+
+    <TextView
+        android:id="@+id/Vacio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="20dp"
+        android:text=""
+        />
+
+    <TextView
+        android:id="@+id/cap1x01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="28dp"
+        android:text="1x01 Piloto"
+        android:textColor="@color/disponible"
+        android:onClick="abrirSerie1"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/cap1x02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="28dp"
+        android:textColor="@color/nodisponible"
+        android:text="1x02 La hipótesis del gran cerebro"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/cap1x03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="28dp"
+        android:textColor="@color/nodisponible"
+        android:text="1x03 El corolario de botas peludas"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/cap1x04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="28dp"
+        android:text="1x04 El efecto del pez luminoso"
+        android:textColor="@color/nodisponible"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/cap2x01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="28dp"
+        android:text="2x01 El paradigma del pescado malo"
+        android:textColor="@color/nodisponible"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/cap2x02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="28dp"
+        android:text="2x02 La topología Codpiece"
+        android:textColor="@color/nodisponible"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/cap2x03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="28dp"
+        android:text="2x03 La sublimación bárbara"
+        android:textColor="@color/nodisponible"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/cap2x04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="28dp"
+        android:text="2x04 La equivalencia del grifo"
+        android:textColor="@color/nodisponible"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/Vacio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="15dp"
+        android:text=""
+        />
+
+
+    <TextView
+        android:id="@+id/barra2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/disponible"
+        />
+
+    <TextView
+        android:id="@+id/Resultados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:text=""
+        android:textColor="@color/disponible"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+
+</LinearLayout>
+</ScrollView>
