@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -14,6 +15,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import static android.R.drawable.ic_media_play;
+import static android.view.View.GONE;
 
 public class Video1x01 extends AppCompatActivity {
 
@@ -46,6 +48,8 @@ public class Video1x01 extends AppCompatActivity {
 
     public void play(){
         final SeekBar barra=(SeekBar) findViewById(R.id.seekBar);
+        final LinearLayout infonull=(LinearLayout) findViewById(R.id.InfoNull);
+
         barra.setMax(60*22);
         int delay = 0; // delay for 0 sec.
         int period = 10;
@@ -55,7 +59,11 @@ public class Video1x01 extends AppCompatActivity {
             public void run()
             {
                 if(!pausa){
+                    if(barra.getProgress()==50){
+                        infonull.setVisibility(GONE);
+                    }
                     barra.setProgress(barra.getProgress()+1);
+
                 }
             }
         }, delay, period);
