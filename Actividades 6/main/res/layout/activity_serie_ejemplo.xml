@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vermia.cosas.TheBigBangTheory"
+    >
+
+
+    <TextView
+        android:id="@+id/serieEjemploTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Serie de Ejemplo"
+        android:textSize="40dp"
+        />
+
+    <HorizontalScrollView
+        android:layout_height="30dp"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@id/serieEjemploTexto"
+        android:id="@+id/horizontalScrollView"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp"
+            >
+
+            <TextView
+                android:id="@+id/Temporada1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temporada 1"
+                android:onClick="pulsaTemp1"
+                android:layout_marginTop="7dp"
+                />
+
+            <TextView
+                android:id="@+id/Temporada2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temporada 2"
+                android:layout_marginLeft="40dp"
+                android:onClick="pulsaTemp2"
+
+                android:layout_marginTop="7dp"
+                />
+            <TextView
+                android:id="@+id/Temporada3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temporada 3"
+                android:layout_marginLeft="40dp"
+                android:onClick="pulsaTemp3"
+                android:layout_marginTop="7dp"
+                />
+            <TextView
+                android:id="@+id/Temporada4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temporada 4"
+                android:layout_marginLeft="40dp"
+                android:onClick="pulsaTemp4"
+                android:layout_marginTop="7dp"
+                />
+            <TextView
+                android:id="@+id/Temporada5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temporada 5"
+                android:layout_marginLeft="40dp"
+                android:onClick="pulsaTemp5"
+                android:layout_marginTop="7dp"
+                />
+        </LinearLayout>
+
+     </HorizontalScrollView>
+ //TEMPORADA 1
+    <LinearLayout
+        android:id="@+id/temp1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/horizontalScrollView"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cap1x01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1x01: La alparca"
+            android:layout_marginLeft="40dp"
+            android:onClick="abrirCap1x01"
+            />
+        <TextView
+            android:id="@+id/cap1x02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1x02: La parca que aparca"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:id="@+id/cap1x03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1x03: Maldición gitana"
+            android:layout_marginLeft="40dp"
+            />
+
+    </LinearLayout>
+
+    //TEMPORADA 2
+    <LinearLayout
+        android:id="@+id/temp2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/horizontalScrollView"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/cap2x01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2x01: Nos quedamos sin parkas"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:id="@+id/cap2x02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2x02: Despedido del aparcamiento"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:id="@+id/cap2x03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2x03: La parca que ya no aparca"
+            android:layout_marginLeft="40dp"
+            />
+    </LinearLayout>
+//TMPORADA 3
+    <LinearLayout
+        android:id="@+id/temp3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/horizontalScrollView"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/cap3x01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3x01: Alpacas sin fronteras"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:id="@+id/cap3x02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3x02: Gitanos en Marbella"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:id="@+id/cap3x03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3x03: La parca que vuelve a aparcar"
+            android:layout_marginLeft="40dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/temp4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/horizontalScrollView"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/cap4x01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4x01: La parca con parka"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:id="@+id/cap4x02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4x02: La alparca que aparca"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:id="@+id/cap4x03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4x03: Rebelión en en mundo de las parcas"
+            android:layout_marginLeft="40dp"
+            />
+    </LinearLayout>
+//TEMPORADA 5
+    <LinearLayout
+        android:id="@+id/temp5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/horizontalScrollView"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/cap5x01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5x01: La Gran Parca también aparca"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:id="@+id/cap5x02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5x02: La Gran Alparca"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:id="@+id/cap5x03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5x03: La parca gitana"
+            android:layout_marginLeft="40dp"
+            />
+    </LinearLayout>
+</RelativeLayout>
