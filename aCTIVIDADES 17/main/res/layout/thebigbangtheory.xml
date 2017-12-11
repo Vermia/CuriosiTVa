@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vermia.cosas.TheBigBangTheory"
+    >
+
+
+    <EditText
+        android:id="@+id/BusquedaTBBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:hint="Buscar..."
+        android:textSize="28dp"
+
+        />
+
+    <ImageButton
+        android:id="@+id/BusquedaImgTBBT"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@android:drawable/ic_search_category_default" />
+
+    <HorizontalScrollView
+
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@id/BusquedaTBBT"
+        android:layout_marginTop="10dp"
+        android:id="@+id/horizontalScrollView"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp"
+            >
+
+            <TextView
+                android:id="@+id/Temporada1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temporada 1"
+                android:textColor="@color/disponible"
+                android:onClick="pulsaTemp1"
+                android:layout_marginTop="7dp"
+
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/Temporada2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temporada 2"
+                android:textColor="@color/disponible"
+                android:layout_marginLeft="40dp"
+                android:onClick="pulsaTemp2"
+                android:textSize="20dp"
+                android:layout_marginTop="7dp"
+                />
+            <TextView
+                android:id="@+id/Temporada3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temporada 3"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/disponible"
+                android:onClick="pulsaTemp3"
+                android:layout_marginTop="7dp"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:id="@+id/Temporada4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/disponible"
+                android:text="Temporada 4"
+                android:layout_marginLeft="40dp"
+                android:onClick="pulsaTemp4"
+                android:layout_marginTop="7dp"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:id="@+id/Temporada5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temporada 5"
+                android:textColor="@color/disponible"
+                android:layout_marginLeft="40dp"
+                android:onClick="pulsaTemp5"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+
+     </HorizontalScrollView>
+ //TEMPORADA 1
+    <LinearLayout
+        android:id="@+id/temp1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/horizontalScrollView"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cap1x01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1x01: Piloto"
+            android:layout_marginLeft="40dp"
+            android:onClick="abrirCap1x01"
+            android:layout_marginTop="10dp"
+            android:textSize="28dp"
+            android:textColor="@color/disponible"
+            />
+        <TextView
+            android:id="@+id/cap1x02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1x02: La hipótesis del gran cerebro"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/nodisponible"
+            android:textSize="28dp"
+            />
+        <TextView
+            android:id="@+id/cap1x03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1x03: El corolario de botas peludas"
+            android:textColor="@color/nodisponible"
+            android:textSize="28dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/cap1x04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1x04: El efecto del pez luminoso"
+            android:textColor="@color/nodisponible"
+            android:layout_marginTop="10dp"
+            android:textSize="28dp"
+            android:layout_marginLeft="40dp"
+            />
+
+    </LinearLayout>
+
+    //TEMPORADA 2
+    <LinearLayout
+        android:id="@+id/temp2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/horizontalScrollView"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/cap2x01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2x01: El paradigma del pescado malo"
+            android:textSize="28dp"
+            android:textColor="@color/nodisponible"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:id="@+id/cap2x02"
+            android:textColor="@color/nodisponible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2x02: La topología Codpiece"
+            android:textSize="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:id="@+id/cap2x03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2x03: La sublimación bárbara"
+            android:textSize="28dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/nodisponible"
+            android:layout_marginLeft="40dp"
+            />
+
+        <TextView
+            android:id="@+id/cap2x04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2x04: La equivalencia del grifo"
+            android:textSize="28dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/nodisponible"
+            android:layout_marginLeft="40dp"
+            />
+    </LinearLayout>
+//TMPORADA 3
+    <LinearLayout
+        android:id="@+id/temp3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/horizontalScrollView"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/cap3x01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3x01: La fluctuación del abrelatas eléctrico"
+            android:textSize="28dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/nodisponible"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:id="@+id/cap3x02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3x02: Las conjeturas de Jiminy"
+            android:textSize="28dp"
+            android:textColor="@color/nodisponible"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/cap3x03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3x03: La variante Gothowitz"
+            android:textSize="28dp"
+            android:textColor="@color/nodisponible"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/temp4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/horizontalScrollView"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/cap4x01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4x01: Manipulación robótica"
+            android:textSize="28dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/nodisponible"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:id="@+id/cap4x02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4x02: La amplificación de verduras"
+            android:textColor="@color/nodisponible"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:textSize="28dp"
+            />
+        <TextView
+            android:id="@+id/cap4x03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4x03: Una sustitucion brillante"
+            android:textSize="28dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/nodisponible"
+            android:layout_marginLeft="40dp"
+            />
+    </LinearLayout>
+//TEMPORADA 5
+    <LinearLayout
+        android:id="@+id/temp5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/horizontalScrollView"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/cap5x01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5x01: Analisis del reflejo de golfa"
+            android:textSize="28dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/nodisponible"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:id="@+id/cap5x02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5x02: La teoría de la plaga"
+            android:textSize="28dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/nodisponible"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:id="@+id/cap5x03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5x03: La extrapolación del tiron de ingle"
+            android:textSize="28dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/nodisponible"
+            android:layout_marginLeft="40dp"
+            />
+    </LinearLayout>
+</RelativeLayout>
