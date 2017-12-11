@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:theme="@style/AppTheme.NoActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vermia.cosas.Temas">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            >
+
+
+
+
+
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Temas"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="50dp"
+            />
+
+        <ImageButton
+            android:id="@+id/filtros"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/idiomas"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#00ff0000"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_menu_manage" />
+
+        <ImageButton
+            android:id="@+id/idiomas"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:background="#00ff0000"
+            app:srcCompat="@android:drawable/ic_menu_mapmode"
+            android:layout_toLeftOf="@+id/temas"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:id="@+id/temas"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#00ff0000"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/about"
+            app:srcCompat="@android:drawable/ic_menu_edit"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:id="@+id/about"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:background="#00ff0000"
+            app:srcCompat="@android:drawable/ic_menu_myplaces"
+            android:layout_toLeftOf="@+id/imagindragon"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:id="@+id/imagindragon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_dialog_info"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/rojo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/oscuro"
+        android:layout_alignRight="@+id/oscuro"
+        android:layout_below="@+id/oscuro"
+        android:layout_marginTop="39dp"
+        android:text="Rojo"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/claro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="94dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="70dp"
+        android:text="Claro"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/oscuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/claro"
+        android:layout_marginTop="39dp"
+        android:layout_alignEnd="@+id/claro"
+        android:layout_alignRight="@+id/claro"
+        android:text="Oscuro"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/rojo"
+        android:layout_alignRight="@+id/rojo"
+        android:layout_below="@+id/rojo"
+        android:layout_marginTop="39dp"
+        android:text="Verde"
+        android:textSize="20dp"
+        android:id="@+id/verde"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/rojo"
+        android:layout_alignRight="@+id/rojo"
+        android:layout_below="@+id/verde"
+        android:layout_marginTop="39dp"
+        android:text="Azul"
+        android:textSize="20dp"
+        android:id="@+id/azul"/>
+
+    <RadioButton
+        android:id="@+id/boton_claro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/claro"
+        android:layout_marginEnd="24dp"
+        android:onClick="temaClaro"
+        android:layout_marginRight="24dp" />
+
+    <RadioButton
+        android:id="@+id/boton_oscuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/boton_claro"
+        android:layout_alignStart="@+id/boton_claro"
+        android:onClick="temaOscuro"
+        android:layout_alignTop="@+id/oscuro"/>
+
+    <RadioButton
+        android:id="@+id/boton_rojo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/boton_claro"
+        android:layout_alignStart="@+id/boton_claro"
+        android:onClick="temaRojo"
+        android:layout_alignTop="@+id/rojo"/>
+
+    <RadioButton
+        android:id="@+id/boton_verde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/boton_claro"
+        android:layout_alignStart="@+id/boton_claro"
+        android:onClick="temaVerde"
+        android:layout_alignTop="@+id/verde"/>
+
+    <RadioButton
+        android:id="@+id/boton_azul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/boton_claro"
+        android:layout_alignStart="@+id/boton_claro"
+        android:onClick="temaAzul"
+        android:layout_alignTop="@+id/azul"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/claro"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:background="#b7b4b4"/>
+
+    <RadioGroup
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/radioGroup"
+        android:layout_alignStart="@+id/radioGroup"
+        android:layout_alignTop="@+id/oscuro"
+        android:id="@+id/radioGroup2"
+        android:background="#000000"/>
+
+    <RadioGroup
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/radioGroup2"
+        android:layout_alignStart="@+id/radioGroup2"
+        android:layout_alignTop="@+id/rojo"
+        android:id="@+id/radioGroup3"
+        android:background="#ff0000"/>
+
+    <RadioGroup
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/verde"
+
+        android:layout_alignLeft="@+id/radioGroup2"
+        android:layout_alignStart="@+id/radioGroup2"
+        android:id="@+id/radioGroup4"
+        android:background="#00ff08"/>
+
+    <RadioGroup
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/radioGroup4"
+        android:layout_alignStart="@+id/radioGroup4"
+        android:layout_alignTop="@+id/azul"
+        android:background="#0026ff"/>
+</RelativeLayout>
