@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="20dp"
+        android:text=""
+        android:textColor="@color/disponible"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:id="@+id/barra1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/disponible"
+        />
+
+    <TextView
+        android:id="@+id/Vacio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="20dp"
+        android:text=""
+        />
+
+    <TextView
+        android:id="@+id/Serie1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="28dp"
+        android:text="The Big Bang Theory"
+        android:textColor="@color/disponible"
+        android:onClick="abrirSerie1"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/Serie2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="28dp"
+        android:textColor="@color/nodisponible"
+        android:text="Juego de Tronos"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/Serie3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="28dp"
+        android:textColor="@color/nodisponible"
+        android:text="Rick y Morty"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+
+
+    <TextView
+        android:id="@+id/Pelicula1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="28dp"
+        android:text="Transformers"
+        android:textColor="@color/nodisponible"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/Pelicula2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="28dp"
+        android:text="Origen"
+        android:textColor="@color/nodisponible"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/Pelicula3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="28dp"
+        android:text="Paranormal Activity"
+        android:textColor="@color/nodisponible"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/Vacio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="15dp"
+        android:text=""
+        />
+
+
+    <TextView
+        android:id="@+id/barra2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/disponible"
+        />
+
+    <TextView
+        android:id="@+id/Resultados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="20dp"
+        android:text=""
+        android:textColor="@color/disponible"
+        />
+
+
+</LinearLayout>
+
+</ScrollView>

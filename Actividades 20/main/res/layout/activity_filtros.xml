@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="clip_vertical"
+    app:theme="@style/AppTheme.NoActionBar"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            >
+
+
+
+
+
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Filtros"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="50dp"
+            />
+
+        <ImageButton
+            android:id="@+id/filtros"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/idiomas"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#00ff0000"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_menu_manage" />
+
+        <ImageButton
+            android:id="@+id/idiomas"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:background="#00ff0000"
+            app:srcCompat="@android:drawable/ic_menu_mapmode"
+            android:layout_toLeftOf="@+id/temas"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:id="@+id/temas"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#00ff0000"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/about"
+            app:srcCompat="@android:drawable/ic_menu_edit"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:id="@+id/about"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:background="#00ff0000"
+            app:srcCompat="@android:drawable/ic_menu_myplaces"
+            android:layout_toLeftOf="@+id/imagindragon"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:id="@+id/imagindragon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_dialog_info"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="70"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:text="Actores" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/BotonActores"
+            android:onClick="pulsaActores"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="70"
+            android:gravity="left"
+            android:fontFamily="sans-serif"
+            android:text="Ropa"/>
+        <CheckBox
+            android:id="@+id/BotonRopa"
+            android:onClick="pulsaRopa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="140dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:layout_marginLeft="30dp"
+            android:gravity="left"
+            android:fontFamily="sans-serif"
+            android:text="Lugares"/>
+        <CheckBox
+            android:id="@+id/BotonLugares"
+            android:onClick="pulsaLugares"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="180dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:gravity="left"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="sans-serif"
+            android:text="Artículos"/>
+        <CheckBox
+            android:id="@+id/BotonArticulos"
+            android:onClick="pulsaArticulos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="220dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:layout_marginLeft="30dp"
+            android:gravity="left"
+            android:fontFamily="sans-serif"
+            android:text="Términos"/>
+        <CheckBox
+
+            android:id="@+id/BotonTerminos"
+            android:onClick="pulsaTerminos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="260dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:layout_marginLeft="30dp"
+            android:gravity="left"
+            android:fontFamily="sans-serif"
+            android:text="Personajes"/>
+        <CheckBox
+            android:id="@+id/BotonPersonajes"
+            android:onClick="pulsaPersonajes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
