@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:theme="@style/AppTheme.NoActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vermia.cosas.Video1x01">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <!--CADA RECTANGULO, DE ABAJO A ARRIBA-->
+
+
+
+//INFO2
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/Info2"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <!--IMAGEN-->
+                <TextView
+                    android:layout_width="400dp"
+                    android:layout_height="80dp"
+                    android:textSize="25dp"
+
+                    android:text="Sheldon lleva la camiseta de Flash"
+                    />
+
+                <ImageButton
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/botonFav2"
+                    android:onClick="pulsaFav2"
+                    />
+            </LinearLayout>
+ //INFO1
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/Info1"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <!--IMAGEN-->
+                <TextView
+                    android:layout_width="400dp"
+                    android:layout_height="80dp"
+                    android:textSize="25sp"
+                    android:text="Sheldon nació en Texas"
+                    />
+
+                <ImageButton
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:onClick="pulsaFav1"
+                    android:id="@+id/botonFav1"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/InfoNull"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <!--IMAGEN?-->
+                <TextView
+                    android:layout_width="400dp"
+                    android:layout_height="80dp"
+                    android:textSize="25dp"
+
+                    android:text="Hola, soy un texto de ejemplo"
+                    />
+
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="34dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+
+        />
+
+    <ImageButton
+        android:id="@+id/botonPausa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="pulsaPausa"
+         />
+
+    <TextView
+        android:id="@+id/dospuntos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="60dp"
+        android:text=":"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/dospuntos"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/minutos"
+        android:editable="false"
+        />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="535dp"
+        android:editable="false"
+        android:id="@+id/segundos"
+        />
+
+</RelativeLayout>
