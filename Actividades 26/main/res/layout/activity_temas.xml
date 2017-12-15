@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:theme="@style/AppTheme.NoActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vermia.cosas.Temas">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/barra"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            >
+
+
+
+
+
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Temas"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="15dp"
+            />
+
+        <ImageButton
+            android:id="@+id/filtros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="17dp"
+            android:layout_toLeftOf="@+id/idiomas"
+            android:background="#00ff0000"
+            android:visibility="gone"
+            app:srcCompat="@mipmap/filtros" />
+
+        <ImageButton
+            android:id="@+id/idiomas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ff0000"
+            app:srcCompat="@mipmap/idiomas"
+            android:layout_toLeftOf="@+id/temas"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="16dp"/>
+
+        <ImageButton
+            android:id="@+id/temas"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#00ff0000"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/about"
+            app:srcCompat="@mipmap/temas"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"/>
+
+        <ImageButton
+            android:id="@+id/about"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:background="#00ff0000"
+            app:srcCompat="@mipmap/about"
+            android:layout_toLeftOf="@+id/imagindragon"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="16dp"/>
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#00ff0000"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/filtros"
+            app:srcCompat="@mipmap/home"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="17dp"/>
+
+        <ImageButton
+            android:id="@+id/imagindragon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#00ff0000"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@mipmap/menu_movil" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/rojo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/claro"
+        android:layout_alignLeft="@id/claro"
+        android:layout_below="@+id/oscuro"
+        android:layout_marginTop="39dp"
+        android:text="Rojo"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/claro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="94dp"
+        android:layout_marginStart="94dp"
+
+        android:layout_marginTop="85dp"
+        android:text="Claro"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/oscuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/claro"
+        android:layout_marginTop="39dp"
+        android:layout_alignStart="@id/claro"
+        android:layout_alignLeft="@id/claro"
+        android:text="Oscuro"
+        android:textSize="28dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/claro"
+        android:layout_alignLeft="@id/claro"
+        android:layout_below="@+id/rojo"
+        android:layout_marginTop="39dp"
+        android:text="Verde"
+        android:textSize="28dp"
+        android:id="@+id/verde"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/claro"
+        android:layout_alignLeft="@id/claro"
+        android:layout_below="@+id/verde"
+        android:layout_marginTop="39dp"
+        android:text="Azul"
+        android:textSize="28dp"
+        android:id="@+id/azul"/>
+
+    <RadioButton
+        android:id="@+id/boton_claro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="24dp"
+        android:onClick="temaClaro"
+        android:layout_marginRight="24dp" />
+
+    <RadioButton
+        android:id="@+id/boton_oscuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/boton_claro"
+        android:layout_alignStart="@+id/boton_claro"
+        android:onClick="temaOscuro"
+        android:layout_below="@id/boton_claro"
+        android:layout_marginTop="45dp"/>
+
+    <RadioButton
+        android:id="@+id/boton_rojo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/boton_claro"
+        android:layout_alignStart="@+id/boton_claro"
+        android:onClick="temaRojo"
+        android:layout_below="@id/boton_oscuro"
+        android:layout_marginTop="45dp"/>
+
+    <RadioButton
+        android:id="@+id/boton_verde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/boton_claro"
+        android:layout_alignStart="@+id/boton_claro"
+        android:onClick="temaVerde"
+        android:layout_below="@id/boton_rojo"
+        android:layout_marginTop="45dp"/>
+
+    <RadioButton
+        android:id="@+id/boton_azul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/boton_claro"
+        android:layout_alignStart="@+id/boton_claro"
+        android:onClick="temaAzul"
+        android:layout_below="@id/boton_verde"
+        android:layout_marginTop="45dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="96dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:background="@color/claro"/>
+
+    <RadioGroup
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/radioGroup"
+        android:layout_alignStart="@+id/radioGroup"
+        android:layout_below="@id/claro"
+        android:layout_marginTop="51dp"
+        android:id="@+id/radioGroup2"
+        android:background="@color/oscuro"/>
+
+    <RadioGroup
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/radioGroup2"
+        android:layout_alignStart="@+id/radioGroup2"
+        android:layout_below="@id/oscuro"
+        android:layout_marginTop="51dp"
+        android:id="@+id/radioGroup3"
+        android:background="@color/rojo"/>
+
+    <RadioGroup
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/rojo"
+        android:layout_marginTop="51dp"
+        android:layout_alignLeft="@+id/radioGroup2"
+        android:layout_alignStart="@+id/radioGroup2"
+        android:id="@+id/radioGroup4"
+        android:background="@color/verde"/>
+
+    <RadioGroup
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/radioGroup4"
+        android:layout_alignStart="@+id/radioGroup4"
+        android:layout_below="@id/verde"
+        android:layout_marginTop="51dp"
+        android:background="@color/colorPrimary"/>
+</RelativeLayout>
