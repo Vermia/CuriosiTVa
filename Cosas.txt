@@ -10,3 +10,215 @@
 =======
 Array de RelativeLayouts para usar un for para chequear los favoritos
 =======
+
+Codigo necesario para el menu
+
+XML
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/barra"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            >
+
+
+
+
+
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Temas"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="15dp"
+            />
+
+        <ImageButton
+            android:id="@+id/filtros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="17dp"
+            android:layout_toLeftOf="@+id/idiomas"
+            android:background="#00ff0000"
+            android:visibility="gone"
+            app:srcCompat="@mipmap/filtros" />
+
+        <ImageButton
+            android:id="@+id/idiomas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ff0000"
+            app:srcCompat="@mipmap/idiomas"
+            android:layout_toLeftOf="@+id/temas"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="16dp"/>
+
+        <ImageButton
+            android:id="@+id/temas"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#00ff0000"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/about"
+            app:srcCompat="@mipmap/temas"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"/>
+
+        <ImageButton
+            android:id="@+id/about"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:background="#00ff0000"
+            app:srcCompat="@mipmap/about"
+            android:layout_toLeftOf="@+id/imagindragon"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="16dp"/>
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#00ff0000"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/filtros"
+            app:srcCompat="@mipmap/home"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="17dp"/>
+
+        <ImageButton
+            android:id="@+id/imagindragon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#00ff0000"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@mipmap/menu_movil" />
+    </RelativeLayout>
+
+JAVA
+
+
+       barra = (RadioGroup) findViewById(R.id.barra);
+
+        home = (ImageButton) findViewById(R.id.home);
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent BusquedaInicio= new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(BusquedaInicio);
+                finish();
+
+            }
+        });
+
+        filtros = (ImageButton) findViewById(R.id.filtros);
+
+        filtros.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent BusquedaInicio= new Intent(getApplicationContext(),Filtros.class);
+                startActivity(BusquedaInicio);
+                finish();
+
+            }
+        });
+
+        idiomas = (ImageButton) findViewById(R.id.idiomas);
+
+        idiomas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent BusquedaInicio= new Intent(getApplicationContext(),Idiomas.class);
+                startActivity(BusquedaInicio);
+                finish();
+
+            }
+        });
+
+        about = (ImageButton) findViewById(R.id.about);
+
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent BusquedaInicio= new Intent(getApplicationContext(),About.class);
+                startActivity(BusquedaInicio);
+                finish();
+
+            }
+        });
+
+        temas = (ImageButton) findViewById(R.id.temas);
+
+        temas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent BusquedaInicio= new Intent(getApplicationContext(),Temast.class);
+                startActivity(BusquedaInicio);
+                finish();
+
+            }
+        });
+
+        menudragon = (ImageButton) findViewById(R.id.imagindragon);
+
+        menudragon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(about.getVisibility()==GONE){
+                    about.setVisibility(VISIBLE);
+                }
+                else{
+                    about.setVisibility(GONE);
+                }
+
+                if(filtros.getVisibility()==GONE){
+                    filtros.setVisibility(VISIBLE);
+                }
+                else{
+                    filtros.setVisibility(GONE);
+                }
+
+                if(idiomas.getVisibility()==GONE){
+                    idiomas.setVisibility(VISIBLE);
+                }
+                else{
+                    idiomas.setVisibility(GONE);
+                }
+
+                if(temas.getVisibility()==GONE){
+                    temas.setVisibility(VISIBLE);
+                }
+                else{
+                    temas.setVisibility(GONE);
+                }
+
+                if(home.getVisibility()==GONE){
+                    home.setVisibility(VISIBLE);
+                }
+                else{
+                    home.setVisibility(GONE);
+                }
+            }
+        });

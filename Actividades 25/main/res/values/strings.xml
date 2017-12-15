@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Cosas</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="t2">Developed by <a href="http://sm.ingenieriamultimedia.org/doku.php/alumnos:201718:grupos:grupo13:proyecto_p2">CuriosiTV.</a></string>
+    <string name="t1">Somos el grupo <a href="http://sm.ingenieriamultimedia.org/doku.php/alumnos:201718:grupos:grupo13:start">Doce más uno</a> de la asignatura Sistemas Multimedia perteneciente al segundo año del grado de Ingeniería Multimedia de la <a href="https://www.ua.es/">Universidad de Alicante</a></string>
+    <string name="t3">Alberto:  <a href="http://sm.ingenieriamultimedia.org/doku.php/alumnos:201718:personas:alumno97:start">Información.</a></string>
+    <string name="t4">Carlos:  <a href="http://sm.ingenieriamultimedia.org/doku.php/alumnos:201718:personas:alumno86:start">Información.</a></string>
+    <string name="t5">Martín:  <a href="http://sm.ingenieriamultimedia.org/doku.php/alumnos:201718:personas:alumno41:start">Información.</a></string>
+    <string name="t6">Paco:  <a href="http://sm.ingenieriamultimedia.org/doku.php/alumnos:201718:personas:alumno75:start">Información.</a></string>
+
+    </resources>
