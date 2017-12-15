@@ -113,6 +113,11 @@ XML
 
 JAVA
 
+    private ImageButton filtros, idiomas, about, menudragon, temas, home;
+    private RadioGroup barra;
+
+
+
 
        barra = (RadioGroup) findViewById(R.id.barra);
 
@@ -174,7 +179,7 @@ JAVA
             @Override
             public void onClick(View v) {
 
-                Intent BusquedaInicio= new Intent(getApplicationContext(),Temast.class);
+                Intent BusquedaInicio= new Intent(getApplicationContext(),Temas.class);
                 startActivity(BusquedaInicio);
                 finish();
 
@@ -222,3 +227,9 @@ JAVA
                 }
             }
         });
+
+
+
+
+
+	barra.setBackgroundColor(Temas.getCol());
