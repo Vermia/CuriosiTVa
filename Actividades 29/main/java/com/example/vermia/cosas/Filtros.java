@@ -20,12 +20,14 @@ public class Filtros extends AppCompatActivity {
     private CheckBox botonArticulos;
     private CheckBox botonTerminos;
     private CheckBox botonPersonajes;
+    private CheckBox botonMusica;
     private static boolean actores;
     private static boolean ropa;
     private static boolean lugares;
     private static boolean articulos;
     private static boolean terminos;
     private static boolean personajes;
+    private static boolean musica;
     private ImageButton filtros, idiomas, about, menudragon, temas, home;
     private RadioGroup barra;
 
@@ -102,6 +104,8 @@ public class Filtros extends AppCompatActivity {
 
             }
         });
+
+
 
         menudragon = (ImageButton) findViewById(R.id.imagindragon);
 
@@ -229,6 +233,17 @@ public class Filtros extends AppCompatActivity {
         }
     }
 
+    public void pulsaMusica(View v){
+        botonMusica= (CheckBox) findViewById(R.id.BotonMusica);
+        if(botonMusica.isChecked()==false){
+            botonMusica.setChecked(false);
+            musica=false;
+        } else {
+            botonMusica.setChecked(true);
+            musica=true;
+        }
+    }
+
     public static void setActores(boolean estado){    actores=estado;    }
 
     public static void setRopa(boolean estado){    ropa=estado;    }
@@ -241,6 +256,8 @@ public class Filtros extends AppCompatActivity {
 
     public static void setPersonajes(boolean estado){    personajes=estado;    }
 
+    public static void setMusica(boolean estado){    musica=estado;    }
+
     public static boolean getActores(){
         return actores;
     }
@@ -251,6 +268,9 @@ public class Filtros extends AppCompatActivity {
 
     public static boolean getLugares(){
         return lugares;
+    }
+    public static boolean getMusica(){
+        return musica;
     }
 
     public static boolean getArticulos(){

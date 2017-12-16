@@ -121,6 +121,7 @@
             android:layout_weight="70"
             android:fontFamily="sans-serif"
             android:gravity="left"
+            android:textSize="28sp"
             android:text="Actores" />
 
         <CheckBox
@@ -142,6 +143,7 @@
             android:layout_marginLeft="30dp"
             android:layout_weight="70"
             android:gravity="left"
+            android:textSize="28sp"
             android:fontFamily="sans-serif"
             android:text="Ropa"/>
         <CheckBox
@@ -163,6 +165,7 @@
             android:layout_weight="70"
             android:layout_marginLeft="30dp"
             android:gravity="left"
+            android:textSize="28sp"
             android:fontFamily="sans-serif"
             android:text="Lugares"/>
         <CheckBox
@@ -184,6 +187,7 @@
             android:layout_weight="70"
             android:gravity="left"
             android:layout_marginLeft="30dp"
+            android:textSize="28sp"
             android:fontFamily="sans-serif"
             android:text="Artículos"/>
         <CheckBox
@@ -204,11 +208,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="70"
             android:layout_marginLeft="30dp"
+            android:textSize="28sp"
             android:gravity="left"
             android:fontFamily="sans-serif"
             android:text="Términos"/>
         <CheckBox
-
             android:id="@+id/BotonTerminos"
             android:onClick="pulsaTerminos"
             android:layout_width="wrap_content"
@@ -226,12 +230,36 @@
             android:layout_height="wrap_content"
             android:layout_weight="70"
             android:layout_marginLeft="30dp"
+            android:textSize="28sp"
             android:gravity="left"
             android:fontFamily="sans-serif"
             android:text="Personajes"/>
         <CheckBox
             android:id="@+id/BotonPersonajes"
             android:onClick="pulsaPersonajes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="300dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:gravity="left"
+            android:layout_marginLeft="30dp"
+            android:textSize="28sp"
+            android:fontFamily="sans-serif"
+            android:text="Música"/>
+        <CheckBox
+            android:id="@+id/BotonMusica"
+            android:onClick="pulsaMusica"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />
