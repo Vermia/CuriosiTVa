@@ -274,7 +274,7 @@
                     android:layout_marginLeft="6dp"
 
                     android:textSize="15sp"
-                    android:text="Ropa: La camiseta de Sheldon es del superhéroe Flash"
+                    android:text="Ropa: La camiseta de Sheldon es del superhéroe Flash. La puedes comprar en la tienda Superherostuff"
                     />
 
                 <ImageButton

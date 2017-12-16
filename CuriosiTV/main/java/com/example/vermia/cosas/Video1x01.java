@@ -194,7 +194,7 @@ public class Video1x01 extends AppCompatActivity {
         };
 
         final Handler h=new Handler();
-        barra.setMax(60 * 22);
+        barra.setMax(60 * 3 + 30);
 
         final Runnable runnableTimestamp=new Runnable(){
             @Override
@@ -310,7 +310,7 @@ public class Video1x01 extends AppCompatActivity {
                         h.post(runnableInfo5);
                     }
 
-                    if(barra.getProgress()==60*1+10 && Filtros.getActores()){
+                    if(barra.getProgress()==60*1+10 && Filtros.getTerminos()){
                         h.post(runnableInfo6);
                     }
 
