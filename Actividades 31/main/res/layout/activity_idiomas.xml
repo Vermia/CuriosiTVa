@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context="com.example.vermia.cosas.Idiomas"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/barra"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            >
+
+
+
+
+
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Idiomas"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="15dp"
+            />
+
+        <ImageButton
+            android:id="@+id/filtros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="17dp"
+            android:layout_toLeftOf="@+id/idiomas"
+            android:background="#00ff0000"
+            android:visibility="gone"
+            app:srcCompat="@mipmap/filtros" />
+
+        <ImageButton
+            android:id="@+id/idiomas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ff0000"
+            app:srcCompat="@mipmap/idiomas"
+            android:layout_toLeftOf="@+id/temas"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="16dp"/>
+
+        <ImageButton
+            android:id="@+id/temas"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#00ff0000"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/about"
+            app:srcCompat="@mipmap/temas"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"/>
+
+        <ImageButton
+            android:id="@+id/about"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:background="#00ff0000"
+            app:srcCompat="@mipmap/about"
+            android:layout_toLeftOf="@+id/imagindragon"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="16dp"/>
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#00ff0000"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/filtros"
+            app:srcCompat="@mipmap/home"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="17dp"/>
+
+        <ImageButton
+            android:id="@+id/imagindragon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#00ff0000"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@mipmap/menu_movil" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="28dp"
+        android:text="Alemán"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:id="@+id/idioma_aleman"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="28dp"
+        android:text="Español"
+        android:layout_marginTop="40dp"
+        android:id="@+id/idioma_espanol"
+        android:layout_below="@+id/idioma_aleman"
+        android:layout_alignStart="@+id/idioma_aleman"
+        android:layout_alignLeft="@+id/idioma_aleman"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="28dp"
+        android:text="Francés"
+        android:layout_marginTop="40dp"
+        android:id="@+id/idioma_frances"
+        android:layout_below="@+id/idioma_espanol"
+        android:layout_alignStart="@+id/idioma_espanol"
+        android:layout_alignLeft="@+id/idioma_espanol"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="28dp"
+        android:text="Inglés"
+        android:layout_marginTop="40dp"
+        android:id="@+id/idioma_ingles"
+        android:layout_below="@+id/idioma_frances"
+        android:layout_alignStart="@+id/idioma_frances"
+        android:layout_alignLeft="@+id/idioma_frances"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="28dp"
+        android:text="Italiano"
+        android:layout_marginTop="40dp"
+        android:id="@+id/idioma_italiano"
+        android:layout_below="@+id/idioma_ingles"
+        android:layout_alignStart="@+id/idioma_ingles"
+        android:layout_alignLeft="@+id/idioma_ingles"
+        />
+
+    <RadioButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="135dp"
+        android:id="@+id/idioma_aleman_boton"
+        android:onClick="pulsaAleman"
+        android:layout_toRightOf="@+id/idioma_aleman"
+        android:layout_toEndOf="@+id/idioma_aleman"
+        android:layout_alignTop="@+id/idioma_aleman"
+        />
+
+
+
+    <RadioButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/idioma_espanol_boton"
+        android:layout_below="@+id/idioma_aleman_boton"
+        android:layout_alignLeft="@id/idioma_aleman_boton"
+        android:onClick="pulsaEspanol"
+        android:layout_alignTop="@id/idioma_espanol"
+        />
+
+    <RadioButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/idioma_frances_boton"
+        android:layout_alignStart="@+id/idioma_espanol_boton"
+        android:layout_alignLeft="@+id/idioma_espanol_boton"
+        android:onClick="pulsaFrances"
+        android:layout_alignTop="@+id/idioma_frances"
+        />
+
+    <RadioButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/idioma_ingles_boton"
+        android:layout_alignStart="@+id/idioma_frances_boton"
+        android:layout_alignLeft="@+id/idioma_frances_boton"
+        android:onClick="pulsaIngles"
+        android:layout_alignTop="@+id/idioma_ingles"
+        />
+
+    <RadioButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/idioma_italiano_boton"
+        android:layout_alignStart="@+id/idioma_ingles_boton"
+        android:layout_alignLeft="@+id/idioma_ingles_boton"
+        android:onClick="pulsaItaliano"
+        android:layout_alignTop="@+id/idioma_italiano"
+        />
+
+</RelativeLayout>
