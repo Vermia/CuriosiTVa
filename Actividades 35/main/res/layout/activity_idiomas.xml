@@ -117,6 +117,7 @@
         android:layout_marginStart="43dp"
         android:layout_marginLeft="43dp"
         android:id="@+id/idioma_aleman"
+        android:onClick="pulsaAleman"
         />
 
     <TextView
@@ -129,6 +130,7 @@
         android:layout_below="@+id/idioma_aleman"
         android:layout_alignStart="@+id/idioma_aleman"
         android:layout_alignLeft="@+id/idioma_aleman"
+        android:onClick="pulsaEspanol"
         />
 
     <TextView
@@ -141,6 +143,7 @@
         android:layout_below="@+id/idioma_espanol"
         android:layout_alignStart="@+id/idioma_espanol"
         android:layout_alignLeft="@+id/idioma_espanol"
+        android:onClick="pulsaFrances"
         />
 
     <TextView
@@ -153,6 +156,7 @@
         android:layout_below="@+id/idioma_frances"
         android:layout_alignStart="@+id/idioma_frances"
         android:layout_alignLeft="@+id/idioma_frances"
+        android:onClick="pulsaIngles"
         />
 
     <TextView
@@ -165,6 +169,7 @@
         android:layout_below="@+id/idioma_ingles"
         android:layout_alignStart="@+id/idioma_ingles"
         android:layout_alignLeft="@+id/idioma_ingles"
+        android:onClick="pulsaItaliano"
         />
 
     <RadioButton

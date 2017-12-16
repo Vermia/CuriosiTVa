@@ -103,16 +103,7 @@
             app:srcCompat="@mipmap/menu_movil" />
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/rojo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/claro"
-        android:layout_alignLeft="@+id/claro"
-        android:layout_below="@+id/oscuro"
-        android:layout_marginTop="39dp"
-        android:text="Rojo"
-        android:textSize="28dp" />
+
 
     <TextView
         android:id="@+id/claro"
@@ -123,6 +114,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="94dp"
         android:layout_marginStart="94dp"
+        android:onClick="temaClaro"
 
         android:layout_marginTop="85dp"
         android:text="Claro"
@@ -136,7 +128,21 @@
         android:layout_marginTop="39dp"
         android:layout_alignStart="@id/claro"
         android:layout_alignLeft="@id/claro"
+        android:onClick="temaOscuro"
         android:text="Oscuro"
+        android:textSize="28dp" />
+
+
+    <TextView
+        android:id="@+id/rojo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/claro"
+        android:layout_alignLeft="@+id/claro"
+        android:layout_below="@+id/oscuro"
+        android:layout_marginTop="39dp"
+        android:onClick="temaRojo"
+        android:text="Rojo"
         android:textSize="28dp" />
 
     <TextView
@@ -147,6 +153,7 @@
         android:layout_below="@+id/rojo"
         android:layout_marginTop="39dp"
         android:text="Verde"
+        android:onClick="temaVerde"
         android:textSize="28dp"
         android:id="@+id/verde"/>
     <TextView
@@ -156,6 +163,7 @@
         android:layout_alignLeft="@id/claro"
         android:layout_below="@+id/verde"
         android:layout_marginTop="39dp"
+        android:onClick="temaAzul"
         android:text="Azul"
         android:textSize="28dp"
         android:id="@+id/azul"/>
