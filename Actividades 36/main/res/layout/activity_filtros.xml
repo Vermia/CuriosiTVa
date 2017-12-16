@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="clip_vertical"
+    app:theme="@style/AppTheme.NoActionBar"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rela"
+        android:text="Las categorías seleccionadas serán las que se mostrarán en la reproducción"
+        android:textColor="@color/disponible"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rela"
+        >
+
+        <RadioGroup
+            android:id="@+id/barra"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            >
+
+
+
+
+
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Filtros"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="15dp"
+            />
+
+        <ImageButton
+            android:id="@+id/filtros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="17dp"
+            android:layout_toLeftOf="@+id/idiomas"
+            android:background="#00ff0000"
+            android:visibility="gone"
+            app:srcCompat="@mipmap/filtros" />
+
+        <ImageButton
+            android:id="@+id/idiomas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ff0000"
+            app:srcCompat="@mipmap/idiomas"
+            android:layout_toLeftOf="@+id/temas"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="16dp"/>
+
+        <ImageButton
+            android:id="@+id/temas"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#00ff0000"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/about"
+            app:srcCompat="@mipmap/temas"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"/>
+
+        <ImageButton
+            android:id="@+id/about"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:background="#00ff0000"
+            app:srcCompat="@mipmap/about"
+            android:layout_toLeftOf="@+id/imagindragon"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="16dp"/>
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#00ff0000"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/filtros"
+            app:srcCompat="@mipmap/home"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="17dp"/>
+
+        <ImageButton
+            android:id="@+id/imagindragon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#00ff0000"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@mipmap/menu_movil" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="140dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="70"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:textSize="28sp"
+            android:onClick="pulsaActores2"
+            android:text="Actores" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/BotonActores"
+            android:onClick="pulsaActores"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="190dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="70"
+            android:gravity="left"
+            android:textSize="28sp"
+            android:onClick="pulsaRopa2"
+            android:fontFamily="sans-serif"
+            android:text="Ropa"/>
+        <CheckBox
+            android:id="@+id/BotonRopa"
+            android:onClick="pulsaRopa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="240dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:layout_marginLeft="30dp"
+            android:gravity="left"
+            android:textSize="28sp"
+            android:fontFamily="sans-serif"
+            android:onClick="pulsaLugares2"
+            android:text="Lugares"/>
+        <CheckBox
+            android:id="@+id/BotonLugares"
+            android:onClick="pulsaLugares"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="290dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:gravity="left"
+            android:layout_marginLeft="30dp"
+            android:textSize="28sp"
+            android:fontFamily="sans-serif"
+            android:onClick="pulsaArticulos2"
+            android:text="Artículos"/>
+        <CheckBox
+            android:id="@+id/BotonArticulos"
+            android:onClick="pulsaArticulos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="340dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:layout_marginLeft="30dp"
+            android:textSize="28sp"
+            android:gravity="left"
+            android:fontFamily="sans-serif"
+            android:onClick="pulsaTerminos2"
+            android:text="Términos"/>
+        <CheckBox
+            android:id="@+id/BotonTerminos"
+            android:onClick="pulsaTerminos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="390dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:layout_marginLeft="30dp"
+            android:textSize="28sp"
+            android:gravity="left"
+            android:fontFamily="sans-serif"
+            android:onClick="pulsaPersonajes2"
+            android:text="Personajes"/>
+        <CheckBox
+            android:id="@+id/BotonPersonajes"
+            android:onClick="pulsaPersonajes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="440dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:gravity="left"
+            android:layout_marginLeft="30dp"
+            android:textSize="28sp"
+            android:fontFamily="sans-serif"
+            android:onClick="pulsaMusica2"
+            android:text="Música"/>
+        <CheckBox
+            android:id="@+id/BotonMusica"
+            android:onClick="pulsaMusica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

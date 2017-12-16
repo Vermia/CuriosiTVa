@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/barra"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            >
+
+
+
+
+
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Búsqueda"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="15dp"
+            />
+
+        <ImageButton
+            android:id="@+id/filtros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="17dp"
+            android:layout_toLeftOf="@+id/idiomas"
+            android:background="#00ff0000"
+            android:visibility="gone"
+            app:srcCompat="@mipmap/filtros" />
+
+        <ImageButton
+            android:id="@+id/idiomas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ff0000"
+            app:srcCompat="@mipmap/idiomas"
+            android:layout_toLeftOf="@+id/temas"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="16dp"/>
+
+        <ImageButton
+            android:id="@+id/temas"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#00ff0000"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/about"
+            app:srcCompat="@mipmap/temas"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"/>
+
+        <ImageButton
+            android:id="@+id/about"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:background="#00ff0000"
+            app:srcCompat="@mipmap/about"
+            android:layout_toLeftOf="@+id/imagindragon"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="16dp"/>
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#00ff0000"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/filtros"
+            app:srcCompat="@mipmap/home"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="17dp"/>
+
+        <ImageButton
+            android:id="@+id/imagindragon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#00ff0000"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@mipmap/menu_movil" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="20dp"
+        android:text=""
+        android:textColor="@color/disponible"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:id="@+id/barra1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/disponible"
+        />
+
+    <TextView
+        android:id="@+id/Vacio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="20dp"
+        android:text=""
+        />
+
+    <TextView
+        android:id="@+id/Serie1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="28dp"
+        android:text="The Big Bang Theory"
+        android:textColor="@color/disponible"
+        android:onClick="abrirSerie1"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/Serie2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="28dp"
+        android:textColor="@color/nodisponible"
+        android:text="Juego de Tronos"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/Serie3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="28dp"
+        android:textColor="@color/nodisponible"
+        android:text="Rick y Morty"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+
+
+    <TextView
+        android:id="@+id/Pelicula1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="28dp"
+        android:text="Transformers"
+        android:textColor="@color/nodisponible"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/Pelicula2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="28dp"
+        android:text="Origen"
+        android:textColor="@color/nodisponible"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/Pelicula3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="28dp"
+        android:text="Paranormal Activity"
+        android:textColor="@color/nodisponible"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/Vacio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="15dp"
+        android:text=""
+        />
+
+
+    <TextView
+        android:id="@+id/barra2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/disponible"
+        />
+
+    <TextView
+        android:id="@+id/Resultados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:textSize="20dp"
+        android:text=""
+        android:textColor="@color/disponible"
+        />
+
+
+</LinearLayout>
+
+</ScrollView>

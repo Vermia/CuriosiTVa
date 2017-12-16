@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:theme="@style/AppTheme.NoActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vermia.cosas.Video1x01">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <!--CADA RECTANGULO, DE ABAJO A ARRIBA-->
+            //INFO11
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/linea11"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:background="@color/negrocuadro"
+                android:visibility="gone"
+
+                android:id="@+id/Info11"
+                >
+                <!--IMAGEN-->
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:text="03:07"
+                    />
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffffff"/>
+
+                <TextView
+                    android:layout_width="425dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+
+                    android:textSize="15sp"
+                    android:text="Música: La canción que suena en el piso de Penny es es Smile, de Lily Allen"
+                    />
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#00ff0000"
+
+                    android:id="@+id/botonFav11"
+                    android:onClick="pulsaFav11"
+                    />
+            </LinearLayout>
+
+            //INFO10
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/linea10"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:background="@color/negrocuadro"
+                android:visibility="gone"
+
+                android:id="@+id/Info10"
+                >
+                <!--IMAGEN-->
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:text="03:03"
+                    />
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffffff"/>
+
+                <TextView
+                    android:layout_width="425dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+
+                    android:textSize="15sp"
+                    android:text="Actores: Kaley Cuoco hace de Penny"
+                    />
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#00ff0000"
+
+                    android:id="@+id/botonFav10"
+                    android:onClick="pulsaFav10"
+                    />
+            </LinearLayout>
+
+            //INFO9
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/linea9"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:background="@color/negrocuadro"
+                android:visibility="gone"
+
+                android:id="@+id/Info9"
+                >
+                <!--IMAGEN-->
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:text="02:59"
+                    />
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffffff"/>
+
+                <TextView
+                    android:layout_width="425dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+
+                    android:textSize="15sp"
+                    android:text="Términos: La clavicula es un hueso situado en el hombro"
+                    />
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#00ff0000"
+
+                    android:id="@+id/botonFav9"
+                    android:onClick="pulsaFav9"
+                    />
+            </LinearLayout>
+
+            //INFO8
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:visibility="gone"
+                android:id="@+id/linea8"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:background="@color/negrocuadro"
+                android:visibility="gone"
+
+                android:id="@+id/Info8"
+                >
+                <!--IMAGEN-->
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:text="01:58"
+                    />
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffffff"/>
+
+                <TextView
+                    android:layout_width="425dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+
+                    android:textSize="15sp"
+                    android:text="Términos: Para hallar el área bajo una curva, hay que calcular su integral definida entre los puntos que cortan con el eje de abscisas."
+                    />
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#00ff0000"
+
+                    android:id="@+id/botonFav8"
+                    android:onClick="pulsaFav8"
+                    />
+            </LinearLayout>
+
+            //INFO7
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/linea7"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:background="@color/negrocuadro"
+                android:visibility="gone"
+
+                android:id="@+id/Info7"
+                >
+                <!--IMAGEN-->
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:text="01:26"
+                    />
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffffff"/>
+
+                <TextView
+                    android:layout_width="425dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+
+                    android:textSize="15sp"
+                    android:text="Ropa: La camiseta de Sheldon es del superhéroe Flash"
+                    />
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#00ff0000"
+
+                    android:id="@+id/botonFav7"
+                    android:onClick="pulsaFav7"
+                    />
+            </LinearLayout>
+
+
+            //INFO6
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/linea6"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:background="@color/negrocuadro"
+                android:visibility="gone"
+
+                android:id="@+id/Info6"
+                >
+                <!--IMAGEN-->
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:text="01:10"
+                    />
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffffff"/>
+
+                <TextView
+                    android:layout_width="425dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+
+                    android:textSize="15sp"
+                    android:text="Términos: Un crucigrama es un pasatiempo, donde se tiene que escribir unas palabras mediante unas definiciones"
+                    />
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#00ff0000"
+
+                    android:id="@+id/botonFav6"
+                    android:onClick="pulsaFav6"
+                    />
+            </LinearLayout>
+
+            //INFO5
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/linea5"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:background="@color/negrocuadro"
+                android:visibility="gone"
+
+                android:id="@+id/Info5"
+                >
+                <!--IMAGEN-->
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:text="00:40"
+                    />
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffffff"/>
+
+                <TextView
+                    android:layout_width="425dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+
+                    android:textSize="15sp"
+                    android:text="Términos: Puerto Príncipe es la capital de Haití y esta situada en las Islas del mar Caribe"
+                    />
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#00ff0000"
+
+                    android:id="@+id/botonFav5"
+                    android:onClick="pulsaFav5"
+                    />
+            </LinearLayout>
+
+            //INFO4
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/linea4"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:background="@color/negrocuadro"
+                android:visibility="gone"
+
+                android:id="@+id/Info4"
+                >
+                <!--IMAGEN-->
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:text="00:24"
+                    />
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffffff"/>
+
+                <TextView
+                    android:layout_width="425dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+
+                    android:textSize="15sp"
+                    android:text="Actores: Vernec Watson hace de Athea Davis"
+                    />
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#00ff0000"
+
+                    android:id="@+id/botonFav4"
+                    android:onClick="pulsaFav4"
+                    />
+            </LinearLayout>
+
+
+            //INFO3
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/linea3"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:background="@color/negrocuadro"
+                android:visibility="gone"
+
+                android:id="@+id/Info3"
+                >
+                <!--IMAGEN-->
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:text="00:06"
+                    />
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffffff"/>
+
+                <TextView
+                    android:layout_width="425dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+
+                    android:textSize="15sp"
+                    android:text="Actores: Johnny Galecki hace de Leonard Hofstadter"
+                    />
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#00ff0000"
+
+                    android:id="@+id/botonFav3"
+                    android:onClick="pulsaFav3"
+                    />
+            </LinearLayout>
+
+            //INFO2
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/linea2"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:background="@color/negrocuadro"
+                android:visibility="gone"
+
+                android:id="@+id/Info2"
+                >
+                <!--IMAGEN-->
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:text="00:05"
+                    />
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffffff"/>
+
+                <TextView
+                    android:layout_width="425dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+
+                    android:textSize="15sp"
+                    android:text="Actores: Jim Parsons hace de Sheldon Cooper"
+                    />
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#00ff0000"
+
+                    android:id="@+id/botonFav2"
+                    android:onClick="pulsaFav2"
+                    />
+            </LinearLayout>
+
+            //INFO1
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/linea1"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:background="@color/negrocuadro"
+
+                android:visibility="gone"
+                android:id="@+id/Info1"
+                >
+                <!--IMAGEN-->
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:text="00:01"
+                    />
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffffff"/>
+
+                <TextView
+                    android:layout_width="425dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+
+                    android:textSize="15dp"
+                    android:text="Términos: El experimento de los fotones y las ranuras suele utilizarse en las clases de fisica cuántica"
+
+                    />
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#00ff0000"
+
+                    android:id="@+id/botonFav1"
+                    android:onClick="pulsaFav1"
+                    />
+            </LinearLayout>
+
+
+            ////////////// PLANTILLA INFONULL //////////////////////////
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:background="@color/negrocuadro"
+                android:visibility="gone"
+
+                android:id="@+id/InfoNull"
+                >
+                <!--IMAGEN-->
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:text="01:00"
+                    />
+
+                <TextView
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffffffff"/>
+
+                <TextView
+                    android:layout_width="425dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+
+                    android:textSize="15sp"
+                    android:text="Sheldon lleva la camiseta de Flash"
+                    />
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#00ff0000"
+
+                    android:id="@+id/botonFavNull"
+                    android:onClick="pulsaFavNull"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="34dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+
+        />
+
+    <ImageButton
+        android:id="@+id/botonPausa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00ff0000"
+        android:layout_alignBottom="@+id/seekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="pulsaPausa"
+         />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/seekBar"
+        android:layout_alignBottom="@id/seekBar"
+        android:id="@+id/minutos"
+        android:editable="false"
+        />
+
+    <TextView
+        android:id="@+id/dospuntos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/minutos"
+        android:layout_alignTop="@id/minutos"
+        android:text=":"
+        android:textSize="30sp"
+        />
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/dospuntos"
+        android:layout_alignTop="@id/dospuntos"
+        android:editable="false"
+        android:id="@+id/segundos"
+        />
+
+</RelativeLayout>
